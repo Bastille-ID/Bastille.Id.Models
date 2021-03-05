@@ -1,0 +1,1164 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bastille.Id.Models</name>
+    </assembly>
+    <members>
+        <member name="T:Bastille.Id.Models.Analytics.ReportUserModel">
+            <summary>
+            This class represents a user within a report.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Analytics.ReportUserModel.UserId">
+            <summary>
+            Gets or sets the user identifier.
+            </summary>
+            <value>The user identifier.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Analytics.ReportUserModel.UserName">
+            <summary>
+            Gets or sets the name of the user.
+            </summary>
+            <value>The name of the user.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Analytics.ReportUserModel.Email">
+            <summary>
+            Gets or sets the email.
+            </summary>
+            <value>The email.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Analytics.ReportUserModel.FirstName">
+            <summary>
+            Gets or sets the first name.
+            </summary>
+            <value>The first name.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Analytics.ReportUserModel.LastName">
+            <summary>
+            Gets or sets the last name.
+            </summary>
+            <value>The last name.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Analytics.ReportUserModel.Picture">
+            <summary>
+            Gets or sets the URL to the user's profile picture.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Analytics.ReportUserModel.LastLoginDateTime">
+            <summary>
+            Gets or sets the last login date time.
+            </summary>
+            <value>The last login date time.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Analytics.ReportUserModel.CreatedDate">
+            <summary>
+            Gets or sets the created date.
+            </summary>
+            <value>The created date.</value>
+        </member>
+        <member name="T:Bastille.Id.Models.Clients.BrowseClientModel">
+            <summary>
+            This class represents a minimal detail client record.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.BrowseClientModel.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.BrowseClientModel.ClientId">
+            <summary>
+            Gets or sets the client identifier.
+            </summary>
+            <value>The client identifier.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.BrowseClientModel.ClientName">
+            <summary>
+            Gets or sets the name of the client.
+            </summary>
+            <value>The name of the client.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.BrowseClientModel.Description">
+            <summary>
+            Gets or sets the description.
+            </summary>
+            <value>The description.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.BrowseClientModel.LogoUri">
+            <summary>
+            Gets or sets the logo URI.
+            </summary>
+            <value>The logo URI.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.BrowseClientModel.RequireConsent">
+            <summary>
+            Gets or sets a value indicating whether [require consent].
+            </summary>
+            <value><c>true</c> if [require consent]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.BrowseClientModel.Enabled">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Bastille.Id.Models.Clients.BrowseClientModel" /> is enabled.
+            </summary>
+            <value><c>true</c> if enabled; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="T:Bastille.Id.Models.Clients.ClientModel">
+            <summary>
+            This class represents a model related to a client.
+            </summary>
+        </member>
+        <member name="M:Bastille.Id.Models.Clients.ClientModel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Bastille.Id.Models.Clients.ClientModel" /> class.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.ClientModel.Id">
+            <summary>
+            Unique ID of the client
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.ClientModel.AccessTokenTypeValue">
+            <summary>
+            Gets or sets the access token type value.
+            </summary>
+            <value>The access token type value.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.ClientModel.RefreshTokenExpirationValue">
+            <summary>
+            Gets or sets the refresh token expiration value.
+            </summary>
+            <value>The refresh token expiration value.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.ClientModel.RefreshTokenUsageValue">
+            <summary>
+            Gets or sets the refresh token usage value.
+            </summary>
+            <value>The refresh token usage value.</value>
+        </member>
+        <member name="T:Bastille.Id.Models.Logging.AuditEvent">
+            <summary>
+            Contains an enumerated list of security event types.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.Logging.AuditEvent.Login">
+            <summary>
+            Login event.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.Logging.AuditEvent.Logout">
+            <summary>
+            Logout event.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.Logging.AuditEvent.Consent">
+            <summary>
+            Consent event.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.Logging.AuditEvent.Validation">
+            <summary>
+            Validation event.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.Logging.AuditEvent.Password">
+            <summary>
+            Password update event.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.Logging.AuditEvent.Profile">
+            <summary>
+            Profile update event.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.Logging.AuditEvent.Config">
+            <summary>
+            A configuration update event.
+            </summary>
+        </member>
+        <member name="T:Bastille.Id.Models.Logging.AuditResult">
+            <summary>
+            Contains an enumerated list of security event results.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.Logging.AuditResult.Success">
+            <summary>
+            Successful event.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.Logging.AuditResult.Fail">
+            <summary>
+            Unsuccessful event.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.Logging.AuditResult.Info">
+            <summary>
+            Informational event.
+            </summary>
+        </member>
+        <member name="T:Bastille.Id.Models.Logging.AuditLogQueryFilterModel">
+            <summary>
+            This class implements the paging query request model for browsing audit logs.
+            </summary>
+            <seealso cref="T:Talegen.Common.Models.Shared.Queries.PaginatedQueryRequestModel" />
+        </member>
+        <member name="F:Bastille.Id.Models.Logging.AuditLogQueryFilterModel.Events">
+            <summary>
+            The events
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.Logging.AuditLogQueryFilterModel.Results">
+            <summary>
+            The results
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Logging.AuditLogQueryFilterModel.SearchText">
+            <summary>
+            Gets or sets the search text.
+            </summary>
+            <value>The search text.</value>
+        </member>
+        <member name="T:Bastille.Id.Models.Notifications.NotificationType">
+            <summary>
+            Contains an enumerated list of available notification types.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.Notifications.NotificationType.Message">
+            <summary>
+            A notification message alert.
+            </summary>
+        </member>
+        <member name="T:Bastille.Id.Models.Notifications.NotificationTarget">
+            <summary>
+            Contains an enumerated list of notification target types.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.Notifications.NotificationTarget.User">
+            <summary>
+            Notify a specific user.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.Notifications.NotificationTarget.Tenant">
+            <summary>
+            Notify all users of a specific tenant.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.Notifications.NotificationTarget.All">
+            <summary>
+            Notify all users. All tenants. Admin only.
+            </summary>
+        </member>
+        <member name="T:Bastille.Id.Models.Notifications.NotificationState">
+            <summary>
+            Contains an enumerated list of notification states.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.Notifications.NotificationState.Unread">
+            <summary>
+            The notification is unread.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.Notifications.NotificationState.Read">
+            <summary>
+            The notification is read.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.Notifications.NotificationState.Archived">
+            <summary>
+            The notification is archived.
+            </summary>
+        </member>
+        <member name="T:Bastille.Id.Models.Notifications.NotificationMessageAlertStatus">
+            <summary>
+            Contains an enumerated list of available notification alert statuses.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.Notifications.NotificationMessageAlertStatus.None">
+            <summary>
+            The specified notification has no alert status.
+            </summary>
+            <remarks>No icon necessary.</remarks>
+        </member>
+        <member name="F:Bastille.Id.Models.Notifications.NotificationMessageAlertStatus.Info">
+            <summary>
+            The specified notification is for information.
+            </summary>
+            <remarks>Can denote with an information icon.</remarks>
+        </member>
+        <member name="F:Bastille.Id.Models.Notifications.NotificationMessageAlertStatus.Warning">
+            <summary>
+            The specified notification is for a warning.
+            </summary>
+            <remarks>Can denote with a yield icon.</remarks>
+        </member>
+        <member name="F:Bastille.Id.Models.Notifications.NotificationMessageAlertStatus.Failure">
+            <summary>
+            The specified notification is for a failure.
+            </summary>
+            <remarks>Can denote with a red/stop icon.</remarks>
+        </member>
+        <member name="F:Bastille.Id.Models.Notifications.NotificationMessageAlertStatus.Finished">
+            <summary>
+            The specified notification is for a finished alert.
+            </summary>
+            <remarks>Can denote with a checkered flag or green icon.</remarks>
+        </member>
+        <member name="T:Bastille.Id.Models.Notifications.NotificationModel`2">
+            <summary>
+            This class represents a notification message to be sent.
+            </summary>
+            <typeparam name="TModel">Contains the model type.</typeparam>
+            <typeparam name="TTargetId">Contains the target identity type.</typeparam>
+        </member>
+        <member name="P:Bastille.Id.Models.Notifications.NotificationModel`2.NotificationId">
+            <summary>
+            Gets or sets a unique message identity.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Notifications.NotificationModel`2.NotificationDate">
+            <summary>
+            Gets or sets the notification date time in UTC.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Notifications.NotificationModel`2.Type">
+            <summary>
+            Gets or sets the notification type.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Notifications.NotificationModel`2.State">
+            <summary>
+            Gets or sets the notification state to pass to the system.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Notifications.NotificationModel`2.Target">
+            <summary>
+            Gets or sets the target type.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Notifications.NotificationModel`2.TenantId">
+            <summary>
+            Gets or sets the tenant identity for the notification message.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Notifications.NotificationModel`2.TargetId">
+            <summary>
+            Gets or sets the notification target identity.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Notifications.NotificationModel`2.Alert">
+            <summary>
+            Gets or sets the message alert status type.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Notifications.NotificationModel`2.Model">
+            <summary>
+            Gets or sets the additional notification model to be sent to the client.
+            </summary>
+        </member>
+        <member name="T:Bastille.Id.Models.Notifications.NotificationStoreModel">
+            <summary>
+            This model represents a notification alert that has been stored in the user's store for load on UI/Profile startup.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Notifications.NotificationStoreModel.NotificationId">
+            <summary>
+            Gets or sets the Notification identity.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Notifications.NotificationStoreModel.OrganizationId">
+            <summary>
+            Gets or sets the organization identifier.
+            </summary>
+            <value>The organization identifier.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Notifications.NotificationStoreModel.UserId">
+            <summary>
+            Gets or sets the user identity.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Notifications.NotificationStoreModel.NotificationDate">
+            <summary>
+            Gets or sets the notification date.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Notifications.NotificationStoreModel.Alert">
+            <summary>
+            Gets or sets the alert state of the notification.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Notifications.NotificationStoreModel.State">
+            <summary>
+            Gets or sets the notification state.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Notifications.NotificationStoreModel.Target">
+            <summary>
+            Gets or sets the target type.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Notifications.NotificationStoreModel.Type">
+            <summary>
+            Gets or sets the type of notification.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Notifications.NotificationStoreModel.Message">
+            <summary>
+            Gets or sets the message model properties.
+            </summary>
+        </member>
+        <member name="T:Bastille.Id.Models.Notifications.NotificationStoreQueryModel">
+            <summary>
+            This class represents a notification store query model used in paging interfaces for notification messages.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Notifications.NotificationStoreQueryModel.SearchText">
+            <summary>
+            Gets or sets a string used for filtering notification results.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Notifications.NotificationStoreQueryModel.State">
+            <summary>
+            Gets or sets a list of states to filter by. An empty list will not filter by state.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Notifications.NotificationStoreQueryModel.Alert">
+            <summary>
+            Gets or sets a list of alerts to filter by. An empty list will not filter by alert.
+            </summary>
+        </member>
+        <member name="T:Bastille.Id.Models.Notifications.NotificationStoreResultModel">
+            <summary>
+            This class represents the results of a notifications store query request.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Notifications.NotificationStoreResultModel.TotalUnreadCount">
+            <summary>
+            Gets or sets the total number of unread notification messages for the user.
+            </summary>
+        </member>
+        <member name="T:Bastille.Id.Models.Notifications.NotificationUpdateModel">
+            <summary>
+            This model represents the inputs for a notification message update call within the Inspire application.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Notifications.NotificationUpdateModel.State">
+            <summary>
+            Gets or sets the notification state of the message.
+            </summary>
+        </member>
+        <member name="T:Bastille.Id.Models.Notifications.Types.NotificationMessageModel">
+            <summary>
+            This class represents a message.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Notifications.Types.NotificationMessageModel.Subject">
+            <summary>
+            Gets or sets the message subject.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Notifications.Types.NotificationMessageModel.Summary">
+            <summary>
+            Gets or sets the summary message to display to the user in notification toasts.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Notifications.Types.NotificationMessageModel.HtmlBody">
+            <summary>
+            Gets or sets the message content body in optional HTML format.
+            </summary>
+        </member>
+        <member name="T:Bastille.Id.Models.Notifications.Types.NotificationModelBase">
+            <summary>
+            This abstract class contains properties that are to be applied to all notification model classes.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Notifications.Types.NotificationModelBase.MetadataModel">
+            <summary>
+            Gets or sets the metadata string and deserializes JSON formatted metadata into the Metadata dictionary.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Notifications.Types.NotificationModelBase.Metadata">
+            <summary>
+            Gets or sets an optional set of metadata for the notification message.
+            </summary>
+        </member>
+        <member name="T:Bastille.Id.Models.Organization.MicroOrganizationModel">
+            <summary>
+            This model represents the minimal information for a user.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Organization.MicroOrganizationModel.OrganizationId">
+            <summary>
+            Gets or sets the user's organization identity.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Organization.MicroOrganizationModel.Name">
+            <summary>
+            Gets or sets the user's organization name.
+            </summary>
+        </member>
+        <member name="T:Bastille.Id.Models.Organization.OrganizationModel">
+            <summary>
+            This class represents a complete organization detail.
+            </summary>
+            <seealso cref="T:Bastille.Id.Models.Organization.MicroOrganizationModel" />
+        </member>
+        <member name="P:Bastille.Id.Models.Organization.OrganizationModel.Slug">
+            <summary>
+            Gets or sets the slug.
+            </summary>
+            <value>The slug.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Organization.OrganizationModel.Description">
+            <summary>
+            Gets or sets the description.
+            </summary>
+            <value>The description.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Organization.OrganizationModel.Owner">
+            <summary>
+            Gets or sets the owner user identifier.
+            </summary>
+            <value>The owner user identifier.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Organization.OrganizationModel.Address1">
+            <summary>
+            Gets or sets the address1.
+            </summary>
+            <value>The address1.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Organization.OrganizationModel.Address2">
+            <summary>
+            Gets or sets the address2.
+            </summary>
+            <value>The address2.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Organization.OrganizationModel.City">
+            <summary>
+            Gets or sets the city.
+            </summary>
+            <value>The city.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Organization.OrganizationModel.Region">
+            <summary>
+            Gets or sets the region.
+            </summary>
+            <value>The region.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Organization.OrganizationModel.PostalCode">
+            <summary>
+            Gets or sets the postal code.
+            </summary>
+            <value>The postal code.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Organization.OrganizationModel.Country">
+            <summary>
+            Gets or sets the country.
+            </summary>
+            <value>The country.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Organization.OrganizationModel.CreatedDate">
+            <summary>
+            Gets or sets a date time value when the entity was created.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Organization.OrganizationModel.UpdatedDate">
+            <summary>
+            Gets or sets a date time value when a user account is updated.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Organization.OrganizationModel.Active">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="N:Bastille.Id.Models.Organization" /> is active.
+            </summary>
+            <value><c>true</c> if active; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Organization.OrganizationModel.Groups">
+            <summary>
+            Gets or sets the organization groups.
+            </summary>
+            <value>The groups.</value>
+        </member>
+        <member name="T:Bastille.Id.Models.Organization.OrganizationQueryFilterModel">
+            <summary>
+            This class represents an organization browsing query filter.
+            </summary>
+            <seealso cref="T:Talegen.Common.Models.Shared.Queries.PaginatedQueryRequestModel" />
+        </member>
+        <member name="P:Bastille.Id.Models.Organization.OrganizationQueryFilterModel.Search">
+            <summary>
+            Gets or sets the search text.
+            </summary>
+            <value>The search text.</value>
+        </member>
+        <member name="T:Bastille.Id.Models.Organization.OrganizationUserModel">
+            <summary>
+            This class contains model information for updating an organization user.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Organization.OrganizationUserModel.OrganizationId">
+            <summary>
+            Gets or sets the organization identity value of the user.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Organization.OrganizationUserModel.UserId">
+            <summary>
+            Gets or sets the user identity value.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Organization.OrganizationUserModel.Email">
+            <summary>
+            Gets or sets the user email.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Organization.OrganizationUserModel.PictureUrl">
+            <summary>
+            Gets or sets the URL to the user profile image.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Organization.OrganizationUserModel.FirstName">
+            <summary>
+            Gets or sets the user first name.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Organization.OrganizationUserModel.LastName">
+            <summary>
+            Gets or sets the user last name.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Organization.OrganizationUserModel.FullName">
+            <summary>
+            Gets the user's full name.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Organization.OrganizationUserModel.LastLoginDate">
+            <summary>
+            Gets or sets the last login date time for the user.
+            </summary>
+        </member>
+        <member name="T:Bastille.Id.Models.Properties.ResourceKeys">
+            <summary>
+            This class is automatically generated and will create resource keys for use within the application.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.Properties.ResourceKeys.LabelChangePasswordText">
+            <summary>
+            Gets the key for the LabelChangePasswordText resource string.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.Properties.ResourceKeys.LabelConfirmPasswordText">
+            <summary>
+            Gets the key for the LabelConfirmPasswordText resource string.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.Properties.ResourceKeys.LabelNewPasswordText">
+            <summary>
+            Gets the key for the LabelNewPasswordText resource string.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.Properties.ResourceKeys.PromptNewAndConfirmPasswordAreNeededText">
+            <summary>
+            Gets the key for the PromptNewAndConfirmPasswordAreNeededText resource string.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.Properties.ResourceKeys.PromptNewAndConfirmPasswordMustMatchText">
+            <summary>
+            Gets the key for the PromptNewAndConfirmPasswordMustMatchText resource string.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.Properties.ResourceKeys.PromptPasswordRequirementsText">
+            <summary>
+            Gets the key for the PromptPasswordRequirementsText resource string.
+            </summary>
+        </member>
+        <member name="T:Bastille.Id.Models.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Properties.Resources.LabelChangePasswordText">
+            <summary>
+              Looks up a localized string similar to Change Password.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Properties.Resources.LabelConfirmPasswordText">
+            <summary>
+              Looks up a localized string similar to Confirm Password.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Properties.Resources.LabelNewPasswordText">
+            <summary>
+              Looks up a localized string similar to New Password.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Properties.Resources.PromptNewAndConfirmPasswordAreNeededText">
+            <summary>
+              Looks up a localized string similar to New Password and Confirm Password are needed..
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Properties.Resources.PromptNewAndConfirmPasswordMustMatchText">
+            <summary>
+              Looks up a localized string similar to New Password and Confirm Password must match..
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Properties.Resources.PromptPasswordRequirementsText">
+            <summary>
+              Looks up a localized string similar to Passwords must be 8-20 characters, contain one lower case letter, one upper case letter, one number, and one special character. Passwords must not contain spaces or emoji..
+            </summary>
+        </member>
+        <member name="T:Bastille.Id.Models.Security.BastilleMicroUserModel">
+            <summary>
+            This class represents the minimal propertis for a user model.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.BastilleMicroUserModel.Picture">
+            <summary>
+            Gets or sets the URL to the user's profile picture.
+            </summary>
+        </member>
+        <member name="T:Bastille.Id.Models.Security.BastilleUserModel">
+            <summary>
+            This class represents a user within the server API controller.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.BastilleUserModel.IsEmailConfirmed">
+            <summary>
+            Gets or sets a value indicating whether the e-mail address is confirmed.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.BastilleUserModel.Groups">
+            <summary>
+            Gets or sets the user's organization model.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.BastilleUserModel.Phone">
+            <summary>
+            Gets or sets the phone.
+            </summary>
+            <value>The phone.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.BastilleUserModel.Password">
+            <summary>
+            Gets or sets the user's password.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.BastilleUserModel.Picture">
+            <summary>
+            Gets or sets the picture.
+            </summary>
+            <value>The picture.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.BastilleUserModel.LockoutEnd">
+            <summary>
+            Gets or sets the user's lockout end date.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.BastilleUserModel.LockoutDays">
+            <summary>
+            Gets or sets the user's lockout days.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.BastilleUserModel.Administrator">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Bastille.Id.Models.Security.BastilleUserModel" /> is administrator.
+            </summary>
+            <value><c>true</c> if administrator; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="T:Bastille.Id.Models.Security.ChangePasswordModel">
+            <summary>
+            This class is the password change view model.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ChangePasswordModel.OldPassword">
+            <summary>
+            Gets or sets the old password.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ChangePasswordModel.NewPassword">
+            <summary>
+            Gets or sets the new password.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ChangePasswordModel.ConfirmPassword">
+            <summary>
+            Gets or sets the password confirmation.
+            </summary>
+        </member>
+        <member name="T:Bastille.Id.Models.Security.ConsentModel">
+            <summary>
+            This class is the consent model.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ConsentModel.ClientId">
+            <summary>
+            Gets or sets the client identity.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ConsentModel.ClientName">
+            <summary>
+            Gets or sets the client name.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ConsentModel.ClientUrl">
+            <summary>
+            Gets or sets the client URL.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ConsentModel.ClientLogoUrl">
+            <summary>
+            Gets or sets the client Logo URL.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ConsentModel.Created">
+            <summary>
+            Gets or sets the date the grant was created.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ConsentModel.Expires">
+            <summary>
+            Gets or sets the date when the grant expires.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ConsentModel.IdentityGrantNames">
+            <summary>
+            Gets or sets a list of identity grants.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ConsentModel.ApiGrantNames">
+            <summary>
+            Gets or sets a list of API grants.
+            </summary>
+        </member>
+        <member name="T:Bastille.Id.Models.Security.ExternalProviderModel">
+            <summary>
+            This class represents an external provider.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ExternalProviderModel.DisplayName">
+            <summary>
+            Gets or sets the display name.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ExternalProviderModel.AuthenticationScheme">
+            <summary>
+            Gets or sets the authentication scheme.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ExternalProviderModel.IconUrl">
+            <summary>
+            Gets or sets the icon URL.
+            </summary>
+        </member>
+        <member name="T:Bastille.Id.Models.Security.GroupModel">
+            <summary>
+            This class contains model information for updating an organization user.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.GroupModel.GroupId">
+            <summary>
+            Gets or sets the organization identity value of the user.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.GroupModel.OrganizationId">
+            <summary>
+            Gets or sets the organization identifier.
+            </summary>
+            <value>The organization identifier.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.GroupModel.ParentGroupId">
+            <summary>
+            Gets or sets the parent group identifier.
+            </summary>
+            <value>The parent group identifier.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.GroupModel.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.GroupModel.Description">
+            <summary>
+            Gets or sets the description.
+            </summary>
+            <value>The description.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.GroupModel.OwnerUserId">
+            <summary>
+            Gets or sets the owner user identifier.
+            </summary>
+            <value>The owner user identifier.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.GroupModel.Active">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Bastille.Id.Models.Security.GroupModel" /> is active.
+            </summary>
+            <value><c>true</c> if active; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.GroupModel.Members">
+            <summary>
+            Gets or sets the members.
+            </summary>
+            <value>The members.</value>
+        </member>
+        <member name="T:Bastille.Id.Models.Security.GroupQueryFilterModel">
+            <summary>
+            This class represents a group browsing query filter.
+            </summary>
+            <seealso cref="T:Talegen.Common.Models.Shared.Queries.PaginatedQueryRequestModel" />
+        </member>
+        <member name="P:Bastille.Id.Models.Security.GroupQueryFilterModel.SearchText">
+            <summary>
+            Gets or sets the search text.
+            </summary>
+            <value>The search text.</value>
+        </member>
+        <member name="T:Bastille.Id.Models.Security.GroupUserModel">
+            <summary>
+            This class contains model information for updating an organization user.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.GroupUserModel.UserId">
+            <summary>
+            Gets or sets the user identity value.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.GroupUserModel.GroupId">
+            <summary>
+            Gets or sets the group identity value of the user.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.GroupUserModel.UserName">
+            <summary>
+            Gets or sets the name of the user.
+            </summary>
+            <value>The name of the user.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.GroupUserModel.FirstName">
+            <summary>
+            Gets or sets the user first name.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.GroupUserModel.LastName">
+            <summary>
+            Gets or sets the user last name.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.GroupUserModel.Picture">
+            <summary>
+            Gets or sets the picture.
+            </summary>
+            <value>The picture.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.GroupUserModel.FullName">
+            <summary>
+            Gets the user's full name.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.GroupUserModel.LastLoginDate">
+            <summary>
+            Gets or sets the last login date time for the user.
+            </summary>
+        </member>
+        <member name="T:Bastille.Id.Models.Security.ProfileModel">
+            <summary>
+            This class represents the profile claims and information supported by the server for a user account.
+            </summary>
+        </member>
+        <member name="M:Bastille.Id.Models.Security.ProfileModel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Bastille.Id.Models.Security.ProfileModel" /> class.
+            </summary>
+        </member>
+        <member name="M:Bastille.Id.Models.Security.ProfileModel.#ctor(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Bastille.Id.Models.Security.ProfileModel" /> class.
+            </summary>
+            <param name="claims">Contains a default set of claims.</param>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ProfileModel.UserId">
+            <summary>
+            Gets or sets the user identifier.
+            </summary>
+            <value>The user identifier.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ProfileModel.UserName">
+            <summary>
+            Gets or sets the user name.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ProfileModel.Email">
+            <summary>
+            Gets or sets e-mail address.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ProfileModel.IsEmailConfirmed">
+            <summary>
+            Gets or sets a value indicating whether the e-mail address is confirmed.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ProfileModel.GroupId">
+            <summary>
+            Gets or sets the group identifier.
+            </summary>
+            <value>The group identifier.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ProfileModel.GroupName">
+            <summary>
+            Gets or sets the user's organization name.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ProfileModel.PhoneNumber">
+            <summary>
+            Gets or sets the user phone number.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ProfileModel.LockoutEnd">
+            <summary>
+            Gets or sets a lock out end date time.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ProfileModel.FirstName">
+            <summary>
+            Gets or sets the user's first name.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ProfileModel.LastName">
+            <summary>
+            Gets or sets the user's last name.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ProfileModel.MiddleName">
+            <summary>
+            Gets or sets the user's middle name.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ProfileModel.NickName">
+            <summary>
+            Gets or sets the user's nick name.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ProfileModel.Website">
+            <summary>
+            Gets or sets the web site.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ProfileModel.PictureUrl">
+            <summary>
+            Gets or sets the URL to the user's profile picture.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ProfileModel.TimeZone">
+            <summary>
+            Gets or sets the user's time zone.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ProfileModel.Locale">
+            <summary>
+            Gets or sets the user's preferred locale.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ProfileModel.TwoFactorEnabled">
+            <summary>
+            Gets or sets a value indicating whether two factor is enabled.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ProfileModel.PasswordlessAuthenticationEnabled">
+            <summary>
+            Gets or sets a value indicating whether passwordless authentication is enabled.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ProfileModel.Claims">
+            <summary>
+            Gets or sets the claims list
+            </summary>
+        </member>
+        <member name="T:Bastille.Id.Models.Security.UserExternalProviderModel">
+            <summary>
+            This class represents an external provider.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.UserExternalProviderModel.UserId">
+            <summary>
+            Gets or sets the user identifier.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.UserExternalProviderModel.Email">
+            <summary>
+            Gets or sets the user email.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.UserExternalProviderModel.BoundToUser">
+            <summary>
+            Gets a value indicating whether [bound to user].
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.UserExternalProviderModel.ProviderKey">
+            this.UserLogin?.LoginProvider.Equals(this.AuthenticationScheme, StringComparison.InvariantCultureIgnoreCase) ?? false;
+            <summary>
+            Gets the provider key.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.UserExternalProviderModel.ReturnUrl">
+            this.UserLogin?.ProviderKey ?? string.Empty;
+            <summary>
+            Gets or sets the return URL.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.UserExternalProviderModel.StatusMessage">
+            <summary>
+            Gets or sets the status message.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.UserExternalProviderModel.StatusType">
+            <summary>
+            Gets or sets the type of the status.
+            </summary>
+        </member>
+        <member name="T:Bastille.Id.Models.StatusMessageResultType">
+            <summary>
+            Contains an enumerated list of status message types.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.StatusMessageResultType.None">
+            <summary>
+            No status result type.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.StatusMessageResultType.Primary">
+            <summary>
+            Primary message.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.StatusMessageResultType.Info">
+            <summary>
+            Info message.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.StatusMessageResultType.Success">
+            <summary>
+            Success message.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.StatusMessageResultType.Warning">
+            <summary>
+            Warning message.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.StatusMessageResultType.Danger">
+            <summary>
+            Danger message.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,73 @@
+﻿/*
+ * Bastille.ID Identity Server
+ * (c) Copyright Talegen, LLC.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+*/
+
+namespace Bastille.Id.Models.Analytics
+{
+    using System;
+
+    /// <summary>
+    /// This class represents a user within a report.
+    /// </summary>
+    public class ReportUserModel
+    {
+        /// <summary>
+        /// Gets or sets the user identifier.
+        /// </summary>
+        /// <value>The user identifier.</value>
+        public Guid UserId { get; set; }
+
+        /// <summary>
+        /// Gets or sets the name of the user.
+        /// </summary>
+        /// <value>The name of the user.</value>
+        public string UserName { get; set; }
+
+        /// <summary>
+        /// Gets or sets the email.
+        /// </summary>
+        /// <value>The email.</value>
+        public string Email { get; set; }
+
+        /// <summary>
+        /// Gets or sets the first name.
+        /// </summary>
+        /// <value>The first name.</value>
+        public string FirstName { get; set; }
+
+        /// <summary>
+        /// Gets or sets the last name.
+        /// </summary>
+        /// <value>The last name.</value>
+        public string LastName { get; set; }
+
+        /// <summary>
+        /// Gets or sets the URL to the user's profile picture.
+        /// </summary>
+        public string Picture { get; set; }
+
+        /// <summary>
+        /// Gets or sets the last login date time.
+        /// </summary>
+        /// <value>The last login date time.</value>
+        public DateTime? LastLoginDateTime { get; set; }
+
+        /// <summary>
+        /// Gets or sets the created date.
+        /// </summary>
+        /// <value>The created date.</value>
+        public DateTime CreatedDate { get; set; }
+    }
+}
