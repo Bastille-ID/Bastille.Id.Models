@@ -103,6 +103,24 @@
             </summary>
             <value><c>true</c> if enabled; otherwise, <c>false</c>.</value>
         </member>
+        <member name="T:Bastille.Id.Models.Clients.ClientClaimModel">
+            <summary>
+            This class represents a client claim entry.
+            </summary>
+            <seealso cref="T:IdentityServer4.Models.ClientClaim" />
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.ClientClaimModel.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.ClientClaimModel.ClientId">
+            <summary>
+            Gets or sets the client identifier.
+            </summary>
+            <value>The client identifier.</value>
+        </member>
         <member name="T:Bastille.Id.Models.Clients.ClientCorsOriginModel">
             <summary>
             This class represents a client CORS origin entry.

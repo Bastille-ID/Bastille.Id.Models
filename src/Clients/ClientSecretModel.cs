@@ -62,6 +62,18 @@ namespace Bastille.Id.Models.Clients
     public class ClientSecretModel : IdentityServer4.Models.Secret
     {
         /// <summary>
+        /// Gets or sets the identifier.
+        /// </summary>
+        /// <value>The identifier.</value>
+        public int Id { get; set; }
+
+        /// <summary>
+        /// Gets or sets the client identifier.
+        /// </summary>
+        /// <value>The client identifier.</value>
+        public int ClientId { get; set; }
+
+        /// <summary>
         /// Gets or sets the type of the client secret.
         /// </summary>
         /// <value>The type of the client secret.</value>

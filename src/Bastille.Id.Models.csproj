@@ -10,10 +10,10 @@
     <RepositoryUrl>https://github.com/Talegen/bastille.id</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>Identity</PackageTags>
-    <PackageReleaseNotes>Added the ClientClaimModel</PackageReleaseNotes>
+    <PackageReleaseNotes>Added missing Id and ClientId properties to ClientSecretModel</PackageReleaseNotes>
     <NeutralLanguage>en</NeutralLanguage>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <ApplicationIcon>Assets\logo.ico</ApplicationIcon>
     <PackageIcon>logo.png</PackageIcon>
     <EnableNETAnalyzers>true</EnableNETAnalyzers>
