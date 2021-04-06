@@ -103,6 +103,117 @@
             </summary>
             <value><c>true</c> if enabled; otherwise, <c>false</c>.</value>
         </member>
+        <member name="T:Bastille.Id.Models.Clients.ClientCorsOriginModel">
+            <summary>
+            This class represents a client CORS origin entry.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.ClientCorsOriginModel.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.ClientCorsOriginModel.ClientId">
+            <summary>
+            Gets or sets the client identifier.
+            </summary>
+            <value>The client identifier.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.ClientCorsOriginModel.Origin">
+            <summary>
+            Gets or sets the origin.
+            </summary>
+            <value>The origin.</value>
+        </member>
+        <member name="T:Bastille.Id.Models.Clients.ClientGrantTypes">
+            <summary>
+            Contains an enumerated list of Client Grant types.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.Clients.ClientGrantTypes.DeviceFlow">
+            <summary>
+            Client grants device flow.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.Clients.ClientGrantTypes.ResourceOwnerPassword">
+            <summary>
+            Client grants resource owner password flow.
+            </summary>
+            <remarks>For backwards compatibility. <see cref="F:Bastille.Id.Models.Clients.ClientGrantTypes.ClientCredentials" /> or <see cref="F:Bastille.Id.Models.Clients.ClientGrantTypes.AuthorizationCode" /> is recommended.</remarks>
+        </member>
+        <member name="F:Bastille.Id.Models.Clients.ClientGrantTypes.Implicit">
+            <summary>
+            Client grants implicit flow.
+            </summary>
+            <remarks>For backwards compatibility. <see cref="F:Bastille.Id.Models.Clients.ClientGrantTypes.ClientCredentials" /> or <see cref="F:Bastille.Id.Models.Clients.ClientGrantTypes.AuthorizationCode" /> is recommended.</remarks>
+        </member>
+        <member name="F:Bastille.Id.Models.Clients.ClientGrantTypes.Hybrid">
+            <summary>
+            Client grants hybrid flow.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.Clients.ClientGrantTypes.ClientCredentials">
+            <summary>
+            Client grants client credentials.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.Clients.ClientGrantTypes.AuthorizationCode">
+            <summary>
+            Client grants authorization code.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.Clients.ClientGrantTypes.Delegation">
+            <summary>
+            Client grants delegation flow.
+            </summary>
+        </member>
+        <member name="T:Bastille.Id.Models.Clients.ClientGrantTypeModel">
+            <summary>
+            This class represents a grant for a client.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.ClientGrantTypeModel.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.ClientGrantTypeModel.ClientId">
+            <summary>
+            Gets or sets the client identifier.
+            </summary>
+            <value>The client identifier.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.ClientGrantTypeModel.Type">
+            <summary>
+            Gets or sets the type.
+            </summary>
+            <value>The type.</value>
+        </member>
+        <member name="T:Bastille.Id.Models.Clients.ClientLogoutRedirectUriModel">
+            <summary>
+            This class represents a client post-logout redirect URI entry.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.ClientLogoutRedirectUriModel.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.ClientLogoutRedirectUriModel.ClientId">
+            <summary>
+            Gets or sets the client identifier.
+            </summary>
+            <value>The client identifier.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.ClientLogoutRedirectUriModel.LogoutRedirectUri">
+            <summary>
+            Gets or sets the logout redirect URI.
+            </summary>
+            <value>The logout redirect URI.</value>
+        </member>
         <member name="T:Bastille.Id.Models.Clients.ClientModel">
             <summary>
             This class represents a model related to a client.
@@ -135,6 +246,123 @@
             Gets or sets the refresh token usage value.
             </summary>
             <value>The refresh token usage value.</value>
+        </member>
+        <member name="T:Bastille.Id.Models.Clients.ClientPropertyModel">
+            <summary>
+            This class represents a client property entry.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.ClientPropertyModel.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.ClientPropertyModel.ClientId">
+            <summary>
+            Gets or sets the client identifier.
+            </summary>
+            <value>The client identifier.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.ClientPropertyModel.Key">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.ClientPropertyModel.Value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="T:Bastille.Id.Models.Clients.ClientRedirectUriModel">
+            <summary>
+            This class represents a client redirect.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.ClientRedirectUriModel.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.ClientRedirectUriModel.ClientId">
+            <summary>
+            Gets or sets the client identifier.
+            </summary>
+            <value>The client identifier.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.ClientRedirectUriModel.RedirectUri">
+            <summary>
+            Gets or sets the redirect URI.
+            </summary>
+            <value>The redirect URI.</value>
+        </member>
+        <member name="T:Bastille.Id.Models.Clients.ClientScopeModel">
+            <summary>
+            This class represents a unique client scope within the client configuration.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.ClientScopeModel.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.ClientScopeModel.ClientId">
+            <summary>
+            Gets or sets the client identifier.
+            </summary>
+            <value>The client identifier.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.ClientScopeModel.Scope">
+            <summary>
+            Gets or sets the scope.
+            </summary>
+            <value>The scope.</value>
+        </member>
+        <member name="T:Bastille.Id.Models.Clients.ClientSecretTypes">
+            <summary>
+            Contains an enumerated list of Client Secret types.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.Clients.ClientSecretTypes.JsonWebKey">
+            <summary>
+            JSON Web Key.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.Clients.ClientSecretTypes.SharedSecret">
+            <summary>
+            Shared Secret hash.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.Clients.ClientSecretTypes.X509CertificateBase64">
+            <summary>
+            X509 certificate base64 encoded.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.Clients.ClientSecretTypes.X509CertificateName">
+            <summary>
+            X509 Certificate by Name.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.Clients.ClientSecretTypes.X509CertificateThumbprint">
+            <summary>
+            X509 Certificate by Thumbprint.
+            </summary>
+        </member>
+        <member name="T:Bastille.Id.Models.Clients.ClientSecretModel">
+            <summary>
+            This class represnts a client secret model associated with a client.
+            </summary>
+            <seealso cref="T:IdentityServer4.Models.Secret" />
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.ClientSecretModel.Type">
+            <summary>
+            Gets or sets the type of the client secret.
+            </summary>
+            <value>The type of the client secret.</value>
         </member>
         <member name="T:Bastille.Id.Models.Logging.AuditEvent">
             <summary>
