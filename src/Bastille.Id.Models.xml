@@ -376,6 +376,18 @@
             </summary>
             <seealso cref="T:IdentityServer4.Models.Secret" />
         </member>
+        <member name="P:Bastille.Id.Models.Clients.ClientSecretModel.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.ClientSecretModel.ClientId">
+            <summary>
+            Gets or sets the client identifier.
+            </summary>
+            <value>The client identifier.</value>
+        </member>
         <member name="P:Bastille.Id.Models.Clients.ClientSecretModel.Type">
             <summary>
             Gets or sets the type of the client secret.
@@ -1110,11 +1122,6 @@
             This class contains model information for updating an organization user.
             </summary>
         </member>
-        <member name="P:Bastille.Id.Models.Security.GroupModel.GroupId">
-            <summary>
-            Gets or sets the organization identity value of the user.
-            </summary>
-        </member>
         <member name="P:Bastille.Id.Models.Security.GroupModel.OrganizationId">
             <summary>
             Gets or sets the organization identifier.
@@ -1126,12 +1133,6 @@
             Gets or sets the parent group identifier.
             </summary>
             <value>The parent group identifier.</value>
-        </member>
-        <member name="P:Bastille.Id.Models.Security.GroupModel.Name">
-            <summary>
-            Gets or sets the name.
-            </summary>
-            <value>The name.</value>
         </member>
         <member name="P:Bastille.Id.Models.Security.GroupModel.Description">
             <summary>
@@ -1216,6 +1217,22 @@
             Gets or sets the last login date time for the user.
             </summary>
         </member>
+        <member name="T:Bastille.Id.Models.Security.MinimalGroupModel">
+            <summary>
+            This class contains the minimal group properties for a group record.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.MinimalGroupModel.GroupId">
+            <summary>
+            Gets or sets the organization identity value of the user.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.MinimalGroupModel.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
         <member name="T:Bastille.Id.Models.Security.ProfileModel">
             <summary>
             This class represents the profile claims and information supported by the server for a user account.
@@ -1238,6 +1255,12 @@
             </summary>
             <value>The user identifier.</value>
         </member>
+        <member name="P:Bastille.Id.Models.Security.ProfileModel.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
         <member name="P:Bastille.Id.Models.Security.ProfileModel.UserName">
             <summary>
             Gets or sets the user name.
@@ -1251,17 +1274,6 @@
         <member name="P:Bastille.Id.Models.Security.ProfileModel.IsEmailConfirmed">
             <summary>
             Gets or sets a value indicating whether the e-mail address is confirmed.
-            </summary>
-        </member>
-        <member name="P:Bastille.Id.Models.Security.ProfileModel.GroupId">
-            <summary>
-            Gets or sets the group identifier.
-            </summary>
-            <value>The group identifier.</value>
-        </member>
-        <member name="P:Bastille.Id.Models.Security.ProfileModel.GroupName">
-            <summary>
-            Gets or sets the user's organization name.
             </summary>
         </member>
         <member name="P:Bastille.Id.Models.Security.ProfileModel.PhoneNumber">
@@ -1314,6 +1326,34 @@
             Gets or sets the user's preferred locale.
             </summary>
         </member>
+        <member name="P:Bastille.Id.Models.Security.ProfileModel.Birthday">
+            <summary>
+            Gets or sets the user's preferred locale.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ProfileModel.Gender">
+            <summary>
+            Gets or sets the gender.
+            </summary>
+            <value>The gender.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ProfileModel.WebSite">
+            <summary>
+            Gets or sets the website.
+            </summary>
+            <value>The website.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ProfileModel.Address">
+            <summary>
+            Gets or sets the website.
+            </summary>
+            <value>The website.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ProfileModel.Roles">
+            <summary>
+            Gets or sets the user's preferred locale.
+            </summary>
+        </member>
         <member name="P:Bastille.Id.Models.Security.ProfileModel.TwoFactorEnabled">
             <summary>
             Gets or sets a value indicating whether two factor is enabled.
@@ -1323,6 +1363,12 @@
             <summary>
             Gets or sets a value indicating whether passwordless authentication is enabled.
             </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ProfileModel.Groups">
+            <summary>
+            Gets or sets the groups.
+            </summary>
+            <value>The groups.</value>
         </member>
         <member name="P:Bastille.Id.Models.Security.ProfileModel.Claims">
             <summary>

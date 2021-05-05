@@ -20,6 +20,10 @@ namespace Bastille.Id.Models.Security
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using IdentityModel;
+    using Newtonsoft.Json;
+    using Talegen.Common.Core.Extensions;
+    using Talegen.Common.Models.Contacts;
+    using Talegen.Common.Models.Extensions;
 
     /// <summary>
     /// This class represents the profile claims and information supported by the server for a user account.
@@ -47,40 +51,143 @@ namespace Bastille.Id.Models.Security
         /// Gets or sets the user identifier.
         /// </summary>
         /// <value>The user identifier.</value>
-        public Guid UserId { get; set; }
+        public string UserId
+        {
+            get
+            {
+                return this.Claims.ContainsKey(JwtClaimTypes.Subject) ? this.Claims[JwtClaimTypes.Subject] : string.Empty;
+            }
+
+            set
+            {
+                if (this.Claims.ContainsKey(JwtClaimTypes.Subject))
+                {
+                    this.Claims[JwtClaimTypes.Subject] = value;
+                }
+                else
+                {
+                    this.Claims.Add(JwtClaimTypes.Subject, value);
+                }
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the name.
+        /// </summary>
+        /// <value>The name.</value>
+        public string Name
+        {
+            get
+            {
+                return this.Claims.ContainsKey(JwtClaimTypes.Name) ? this.Claims[JwtClaimTypes.Name] : string.Empty;
+            }
+
+            set
+            {
+                if (this.Claims.ContainsKey(JwtClaimTypes.Name))
+                {
+                    this.Claims[JwtClaimTypes.Name] = value;
+                }
+                else
+                {
+                    this.Claims.Add(JwtClaimTypes.Name, value);
+                }
+            }
+        }
 
         /// <summary>
         /// Gets or sets the user name.
         /// </summary>
-        public string UserName { get; set; }
+        public string UserName
+        {
+            get
+            {
+                return this.Claims.ContainsKey(JwtClaimTypes.PreferredUserName) ? this.Claims[JwtClaimTypes.PreferredUserName] : string.Empty;
+            }
+
+            set
+            {
+                if (this.Claims.ContainsKey(JwtClaimTypes.PreferredUserName))
+                {
+                    this.Claims[JwtClaimTypes.PreferredUserName] = value;
+                }
+                else
+                {
+                    this.Claims.Add(JwtClaimTypes.PreferredUserName, value);
+                }
+            }
+        }
 
         /// <summary>
         /// Gets or sets e-mail address.
         /// </summary>
         [EmailAddress]
-        public string Email { get; set; }
+        public string Email
+        {
+            get
+            {
+                return this.Claims.ContainsKey(JwtClaimTypes.Email) ? this.Claims[JwtClaimTypes.Email] : string.Empty;
+            }
+
+            set
+            {
+                if (this.Claims.ContainsKey(JwtClaimTypes.Email))
+                {
+                    this.Claims[JwtClaimTypes.Email] = value;
+                }
+                else
+                {
+                    this.Claims.Add(JwtClaimTypes.Email, value);
+                }
+            }
+        }
 
         /// <summary>
         /// Gets or sets a value indicating whether the e-mail address is confirmed.
         /// </summary>
-        public bool IsEmailConfirmed { get; set; }
+        public bool IsEmailConfirmed
+        {
+            get
+            {
+                return this.Claims.ContainsKey(JwtClaimTypes.EmailVerified) ? this.Claims[JwtClaimTypes.EmailVerified].ToBoolean() : false;
+            }
 
-        /// <summary>
-        /// Gets or sets the group identifier.
-        /// </summary>
-        /// <value>The group identifier.</value>
-        public Guid GroupId { get; set; }
-
-        /// <summary>
-        /// Gets or sets the user's organization name.
-        /// </summary>
-        public string GroupName { get; set; }
+            set
+            {
+                if (this.Claims.ContainsKey(JwtClaimTypes.EmailVerified))
+                {
+                    this.Claims[JwtClaimTypes.EmailVerified] = value.ToString();
+                }
+                else
+                {
+                    this.Claims.Add(JwtClaimTypes.EmailVerified, value.ToString());
+                }
+            }
+        }
 
         /// <summary>
         /// Gets or sets the user phone number.
         /// </summary>
         [Phone]
-        public string PhoneNumber { get; set; }
+        public string PhoneNumber
+        {
+            get
+            {
+                return this.Claims.ContainsKey(JwtClaimTypes.PhoneNumber) ? this.Claims[JwtClaimTypes.PhoneNumber] : string.Empty;
+            }
+
+            set
+            {
+                if (this.Claims.ContainsKey(JwtClaimTypes.PhoneNumber))
+                {
+                    this.Claims[JwtClaimTypes.PhoneNumber] = value;
+                }
+                else
+                {
+                    this.Claims.Add(JwtClaimTypes.PhoneNumber, value);
+                }
+            }
+        }
 
         /// <summary>
         /// Gets or sets a lock out end date time.
@@ -273,6 +380,124 @@ namespace Bastille.Id.Models.Security
         }
 
         /// <summary>
+        /// Gets or sets the user's preferred locale.
+        /// </summary>
+        public DateTime? Birthday
+        {
+            get
+            {
+                return this.Claims.ContainsKey(JwtClaimTypes.BirthDate) ? this.Claims[JwtClaimTypes.BirthDate].ToDateTime() as DateTime? : null;
+            }
+
+            set
+            {
+                if (this.Claims.ContainsKey(JwtClaimTypes.BirthDate))
+                {
+                    this.Claims[JwtClaimTypes.BirthDate] = value.HasValue ? value.Value.ToString("yyyy-dd-MM") : null;
+                }
+                else
+                {
+                    this.Claims.Add(JwtClaimTypes.BirthDate, value.HasValue ? value.Value.ToString("yyyy-dd-MM") : null);
+                }
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the gender.
+        /// </summary>
+        /// <value>The gender.</value>
+        public string Gender
+        {
+            get
+            {
+                return this.Claims.ContainsKey(JwtClaimTypes.Gender) ? this.Claims[JwtClaimTypes.Gender] : string.Empty;
+            }
+
+            set
+            {
+                if (this.Claims.ContainsKey(JwtClaimTypes.Gender))
+                {
+                    this.Claims[JwtClaimTypes.Gender] = value;
+                }
+                else
+                {
+                    this.Claims.Add(JwtClaimTypes.Gender, value);
+                }
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the website.
+        /// </summary>
+        /// <value>The website.</value>
+        public string WebSite
+        {
+            get
+            {
+                return this.Claims.ContainsKey(JwtClaimTypes.WebSite) ? this.Claims[JwtClaimTypes.WebSite] : string.Empty;
+            }
+
+            set
+            {
+                if (this.Claims.ContainsKey(JwtClaimTypes.WebSite))
+                {
+                    this.Claims[JwtClaimTypes.WebSite] = value;
+                }
+                else
+                {
+                    this.Claims.Add(JwtClaimTypes.WebSite, value);
+                }
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the website.
+        /// </summary>
+        /// <value>The website.</value>
+        public Address Address
+        {
+            get
+            {
+                return this.Claims.ContainsKey(JwtClaimTypes.Address) ? this.Claims[JwtClaimTypes.Address].ToAddress() : null;
+            }
+
+            set
+            {
+                if (this.Claims.ContainsKey(JwtClaimTypes.Address))
+                {
+                    this.Claims[JwtClaimTypes.Address] = value.ToClaimFormat();
+                }
+                else
+                {
+                    this.Claims.Add(JwtClaimTypes.Address, value.ToClaimFormat());
+                }
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the user's preferred locale.
+        /// </summary>
+        public List<string> Roles
+        {
+            get
+            {
+                return this.Claims.ContainsKey(JwtClaimTypes.Role) ? JsonConvert.DeserializeObject<List<string>>(this.Claims[JwtClaimTypes.Role]) : new List<string>();
+            }
+
+            set
+            {
+                if (this.Claims.ContainsKey(JwtClaimTypes.Role))
+                {
+                    this.Claims[JwtClaimTypes.Role] = JsonConvert.SerializeObject(value);
+                }
+                else
+                {
+                    this.Claims.Add(JwtClaimTypes.Role, JsonConvert.SerializeObject(value));
+                }
+            }
+        }
+
+        /// <summary>
         /// Gets or sets a value indicating whether two factor is enabled.
         /// </summary>
         public bool TwoFactorEnabled { get; set; }
@@ -281,6 +506,12 @@ namespace Bastille.Id.Models.Security
         /// Gets or sets a value indicating whether passwordless authentication is enabled.
         /// </summary>
         public bool PasswordlessAuthenticationEnabled { get; set; }
+
+        /// <summary>
+        /// Gets or sets the groups.
+        /// </summary>
+        /// <value>The groups.</value>
+        public List<MinimalGroupModel> Groups { get; set; } = new List<MinimalGroupModel>();
 
         /// <summary>
         /// Gets or sets the claims list

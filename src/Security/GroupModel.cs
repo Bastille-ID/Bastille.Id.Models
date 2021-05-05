@@ -22,13 +22,8 @@ namespace Bastille.Id.Models.Security
     /// <summary>
     /// This class contains model information for updating an organization user.
     /// </summary>
-    public class GroupModel
+    public class GroupModel : MinimalGroupModel
     {
-        /// <summary>
-        /// Gets or sets the organization identity value of the user.
-        /// </summary>
-        public Guid GroupId { get; set; }
-
         /// <summary>
         /// Gets or sets the organization identifier.
         /// </summary>
@@ -40,12 +35,6 @@ namespace Bastille.Id.Models.Security
         /// </summary>
         /// <value>The parent group identifier.</value>
         public Guid? ParentGroupId { get; set; }
-
-        /// <summary>
-        /// Gets or sets the name.
-        /// </summary>
-        /// <value>The name.</value>
-        public string Name { get; set; }
 
         /// <summary>
         /// Gets or sets the description.
