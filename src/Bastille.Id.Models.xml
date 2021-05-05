@@ -1364,6 +1364,12 @@
             Gets or sets a value indicating whether passwordless authentication is enabled.
             </summary>
         </member>
+        <member name="P:Bastille.Id.Models.Security.ProfileModel.Organizations">
+            <summary>
+            Gets or sets the organizations.
+            </summary>
+            <value>The organizations.</value>
+        </member>
         <member name="P:Bastille.Id.Models.Security.ProfileModel.Groups">
             <summary>
             Gets or sets the groups.

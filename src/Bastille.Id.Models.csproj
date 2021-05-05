@@ -10,10 +10,10 @@
     <RepositoryUrl>https://github.com/Talegen/bastille.id</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>Identity</PackageTags>
-    <PackageReleaseNotes>Added Address setting claim to JSON format.</PackageReleaseNotes>
+    <PackageReleaseNotes>Added organizations to the profile model.</PackageReleaseNotes>
     <NeutralLanguage>en</NeutralLanguage>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.5.0</Version>
+    <Version>1.0.6.0</Version>
     <ApplicationIcon>Assets\logo.ico</ApplicationIcon>
     <PackageIcon>logo.png</PackageIcon>
     <EnableNETAnalyzers>true</EnableNETAnalyzers>

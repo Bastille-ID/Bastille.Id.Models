@@ -19,6 +19,7 @@ namespace Bastille.Id.Models.Security
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+    using Bastille.Id.Models.Organization;
     using IdentityModel;
     using Newtonsoft.Json;
     using Talegen.Common.Core.Extensions;
@@ -506,6 +507,12 @@ namespace Bastille.Id.Models.Security
         /// Gets or sets a value indicating whether passwordless authentication is enabled.
         /// </summary>
         public bool PasswordlessAuthenticationEnabled { get; set; }
+
+        /// <summary>
+        /// Gets or sets the organizations.
+        /// </summary>
+        /// <value>The organizations.</value>
+        public List<MicroOrganizationModel> Organizations { get; set; } = new List<MicroOrganizationModel>();
 
         /// <summary>
         /// Gets or sets the groups.
