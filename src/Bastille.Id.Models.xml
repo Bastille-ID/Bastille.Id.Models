@@ -56,6 +56,16 @@
             </summary>
             <value>The created date.</value>
         </member>
+        <member name="T:Bastille.Id.Models.BastilleClaimTypes">
+            <summary>
+            Contains a list of Bastille.ID custom claim types.
+            </summary>
+        </member>
+        <member name="F:Bastille.Id.Models.BastilleClaimTypes.Mobile">
+            <summary>
+            Contains the mobile claim type.
+            </summary>
+        </member>
         <member name="T:Bastille.Id.Models.Clients.BrowseClientModel">
             <summary>
             This class represents a minimal detail client record.
@@ -1277,6 +1287,11 @@
             </summary>
         </member>
         <member name="P:Bastille.Id.Models.Security.ProfileModel.PhoneNumber">
+            <summary>
+            Gets or sets the user phone number.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Security.ProfileModel.Mobile">
             <summary>
             Gets or sets the user phone number.
             </summary>

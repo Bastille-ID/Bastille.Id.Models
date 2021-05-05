@@ -191,6 +191,30 @@ namespace Bastille.Id.Models.Security
         }
 
         /// <summary>
+        /// Gets or sets the user phone number.
+        /// </summary>
+        [Phone]
+        public string Mobile
+        {
+            get
+            {
+                return this.Claims.ContainsKey(BastilleClaimTypes.Mobile) ? this.Claims[BastilleClaimTypes.Mobile] : string.Empty;
+            }
+
+            set
+            {
+                if (this.Claims.ContainsKey(BastilleClaimTypes.Mobile))
+                {
+                    this.Claims[BastilleClaimTypes.Mobile] = value;
+                }
+                else
+                {
+                    this.Claims.Add(BastilleClaimTypes.Mobile, value);
+                }
+            }
+        }
+
+        /// <summary>
         /// Gets or sets a lock out end date time.
         /// </summary>
         public DateTime? LockoutEnd { get; set; }
