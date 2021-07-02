@@ -14,21 +14,15 @@
  *
 */
 
-namespace Bastille.Id.Models.Security
+namespace Bastille.Id.Models.Clients.Consent
 {
-    using System;
     using System.Collections.Generic;
 
     /// <summary>
-    /// This class is the consent model.
+    /// This class is the consent page view model.
     /// </summary>
-    public class ConsentModel
+    public class ConsentViewModel : ConsentInputModel
     {
-        /// <summary>
-        /// Gets or sets the client identity.
-        /// </summary>
-        public string ClientId { get; set; }
-
         /// <summary>
         /// Gets or sets the client name.
         /// </summary>
@@ -45,23 +39,18 @@ namespace Bastille.Id.Models.Security
         public string ClientLogoUrl { get; set; }
 
         /// <summary>
-        /// Gets or sets the date the grant was created.
+        /// Gets or sets a value indicating whether the ability to remember consent is allowed.
         /// </summary>
-        public DateTime Created { get; set; }
+        public bool AllowRememberConsent { get; set; }
 
         /// <summary>
-        /// Gets or sets the date when the grant expires.
+        /// Gets or sets an enumerable list of scopes the identity requests.
         /// </summary>
-        public DateTime? Expires { get; set; }
+        public IEnumerable<ScopeViewModel> IdentityScopes { get; set; }
 
         /// <summary>
-        /// Gets or sets a list of identity grants.
+        /// Gets or sets an enumerable list of scopes the resource requests.
         /// </summary>
-        public List<string> IdentityGrantNames { get; set; }
-
-        /// <summary>
-        /// Gets or sets a list of API grants.
-        /// </summary>
-        public List<string> ApiGrantNames { get; set; }
+        public IEnumerable<ScopeViewModel> ApiScopes { get; set; }
     }
 }

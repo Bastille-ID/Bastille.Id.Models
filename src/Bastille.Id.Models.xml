@@ -404,6 +404,187 @@
             </summary>
             <value>The type of the client secret.</value>
         </member>
+        <member name="T:Bastille.Id.Models.Clients.Consent.ConsentInputModel">
+            <summary>
+            This class is the consent input view model.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.Consent.ConsentInputModel.DoesConsent">
+            <summary>
+            Gets or sets a value indicating whether the user does consent to use.
+            </summary>
+            <value><c>true</c> if the user does consent; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.Consent.ConsentInputModel.ScopesConsented">
+            <summary>
+            Gets or sets the scopes that were consented.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.Consent.ConsentInputModel.RememberConsent">
+            <summary>
+            Gets or sets a value indicating whether consent should be remembered.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.Consent.ConsentInputModel.ReturnUrl">
+            <summary>
+            Gets or sets the URL to redirect to after the consent action.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.Consent.ConsentInputModel.Description">
+            <summary>
+            Gets or sets the description.
+            </summary>
+        </member>
+        <member name="T:Bastille.Id.Models.Clients.Consent.ConsentModel">
+            <summary>
+            This class is the consent model.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.Consent.ConsentModel.ClientId">
+            <summary>
+            Gets or sets the client identity.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.Consent.ConsentModel.ClientName">
+            <summary>
+            Gets or sets the client name.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.Consent.ConsentModel.ClientUrl">
+            <summary>
+            Gets or sets the client URL.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.Consent.ConsentModel.ClientLogoUrl">
+            <summary>
+            Gets or sets the client Logo URL.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.Consent.ConsentModel.Created">
+            <summary>
+            Gets or sets the date the grant was created.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.Consent.ConsentModel.Expires">
+            <summary>
+            Gets or sets the date when the grant expires.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.Consent.ConsentModel.IdentityGrantNames">
+            <summary>
+            Gets or sets a list of identity grants.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.Consent.ConsentModel.ApiGrantNames">
+            <summary>
+            Gets or sets a list of API grants.
+            </summary>
+        </member>
+        <member name="T:Bastille.Id.Models.Clients.Consent.ConsentViewModel">
+            <summary>
+            This class is the consent page view model.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.Consent.ConsentViewModel.ClientName">
+            <summary>
+            Gets or sets the client name.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.Consent.ConsentViewModel.ClientUrl">
+            <summary>
+            Gets or sets the client URL.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.Consent.ConsentViewModel.ClientLogoUrl">
+            <summary>
+            Gets or sets the client Logo URL.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.Consent.ConsentViewModel.AllowRememberConsent">
+            <summary>
+            Gets or sets a value indicating whether the ability to remember consent is allowed.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.Consent.ConsentViewModel.IdentityScopes">
+            <summary>
+            Gets or sets an enumerable list of scopes the identity requests.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.Consent.ConsentViewModel.ApiScopes">
+            <summary>
+            Gets or sets an enumerable list of scopes the resource requests.
+            </summary>
+        </member>
+        <member name="T:Bastille.Id.Models.Clients.Consent.ProcessConsentResult">
+            <summary>
+            This class is the process consent result model.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.Consent.ProcessConsentResult.IsRedirect">
+            <summary>
+            Gets a value indicating whether the browser is to redirect.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.Consent.ProcessConsentResult.RedirectUri">
+            <summary>
+            Gets or sets the URL that shall be redirected to after consent action.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.Consent.ProcessConsentResult.ShowView">
+            <summary>
+            Gets a value indicating whether the consent info should be shown.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.Consent.ProcessConsentResult.ViewModel">
+            <summary>
+            Gets or sets the consent view model.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.Consent.ProcessConsentResult.HasValidationError">
+            <summary>
+            Gets a value indicating whether there was a validation error.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.Consent.ProcessConsentResult.ValidationError">
+            <summary>
+            Gets or sets a validation error message.
+            </summary>
+        </member>
+        <member name="T:Bastille.Id.Models.Clients.Consent.ScopeViewModel">
+            <summary>
+            This class is the scope view model.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.Consent.ScopeViewModel.Value">
+            <summary>
+            Gets or sets the name.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.Consent.ScopeViewModel.DisplayName">
+            <summary>
+            Gets or sets the display name.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.Consent.ScopeViewModel.Description">
+            <summary>
+            Gets or sets the description.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.Consent.ScopeViewModel.Emphasize">
+            <summary>
+            Gets or sets a value indicating whether the scope is emphasized.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.Consent.ScopeViewModel.Required">
+            <summary>
+            Gets or sets a value indicating whether the scope is required.
+            </summary>
+        </member>
+        <member name="P:Bastille.Id.Models.Clients.Consent.ScopeViewModel.Checked">
+            <summary>
+            Gets or sets a value indicating whether the scope is checked by default.
+            </summary>
+        </member>
         <member name="T:Bastille.Id.Models.Logging.AuditEvent">
             <summary>
             Contains an enumerated list of security event types.
@@ -1060,51 +1241,6 @@
         <member name="P:Bastille.Id.Models.Security.ChangePasswordModel.ConfirmPassword">
             <summary>
             Gets or sets the password confirmation.
-            </summary>
-        </member>
-        <member name="T:Bastille.Id.Models.Security.ConsentModel">
-            <summary>
-            This class is the consent model.
-            </summary>
-        </member>
-        <member name="P:Bastille.Id.Models.Security.ConsentModel.ClientId">
-            <summary>
-            Gets or sets the client identity.
-            </summary>
-        </member>
-        <member name="P:Bastille.Id.Models.Security.ConsentModel.ClientName">
-            <summary>
-            Gets or sets the client name.
-            </summary>
-        </member>
-        <member name="P:Bastille.Id.Models.Security.ConsentModel.ClientUrl">
-            <summary>
-            Gets or sets the client URL.
-            </summary>
-        </member>
-        <member name="P:Bastille.Id.Models.Security.ConsentModel.ClientLogoUrl">
-            <summary>
-            Gets or sets the client Logo URL.
-            </summary>
-        </member>
-        <member name="P:Bastille.Id.Models.Security.ConsentModel.Created">
-            <summary>
-            Gets or sets the date the grant was created.
-            </summary>
-        </member>
-        <member name="P:Bastille.Id.Models.Security.ConsentModel.Expires">
-            <summary>
-            Gets or sets the date when the grant expires.
-            </summary>
-        </member>
-        <member name="P:Bastille.Id.Models.Security.ConsentModel.IdentityGrantNames">
-            <summary>
-            Gets or sets a list of identity grants.
-            </summary>
-        </member>
-        <member name="P:Bastille.Id.Models.Security.ConsentModel.ApiGrantNames">
-            <summary>
-            Gets or sets a list of API grants.
             </summary>
         </member>
         <member name="T:Bastille.Id.Models.Security.ExternalProviderModel">
