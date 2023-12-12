@@ -649,7 +649,7 @@
             <summary>
             This class implements the paging query request model for browsing audit logs.
             </summary>
-            <seealso cref="T:Talegen.Common.Models.Shared.Queries.PaginatedQueryRequestModel" />
+            <seealso cref="T:Talegen.Common.Models.Server.Queries.PaginatedQueryRequestModel" />
         </member>
         <member name="F:Bastille.Id.Models.Logging.AuditLogQueryFilterModel.Events">
             <summary>
@@ -1031,7 +1031,7 @@
             <summary>
             This class represents an organization browsing query filter.
             </summary>
-            <seealso cref="T:Talegen.Common.Models.Shared.Queries.PaginatedQueryRequestModel" />
+            <seealso cref="T:Talegen.Common.Models.Server.Queries.PaginatedQueryRequestModel" />
         </member>
         <member name="P:Bastille.Id.Models.Organization.OrganizationQueryFilterModel.Search">
             <summary>
@@ -1308,7 +1308,7 @@
             <summary>
             This class represents a group browsing query filter.
             </summary>
-            <seealso cref="T:Talegen.Common.Models.Shared.Queries.PaginatedQueryRequestModel" />
+            <seealso cref="T:Talegen.Common.Models.Server.Queries.PaginatedQueryRequestModel" />
         </member>
         <member name="P:Bastille.Id.Models.Security.GroupQueryFilterModel.SearchText">
             <summary>
@@ -1455,11 +1455,6 @@
         <member name="P:Bastille.Id.Models.Security.ProfileModel.NickName">
             <summary>
             Gets or sets the user's nick name.
-            </summary>
-        </member>
-        <member name="P:Bastille.Id.Models.Security.ProfileModel.Website">
-            <summary>
-            Gets or sets the web site.
             </summary>
         </member>
         <member name="P:Bastille.Id.Models.Security.ProfileModel.PictureUrl">

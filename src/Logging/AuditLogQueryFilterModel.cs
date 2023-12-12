@@ -17,12 +17,12 @@
 namespace Bastille.Id.Models.Logging
 {
     using System.Collections.Generic;
-    using Talegen.Common.Models.Shared.Queries;
+    using Talegen.Common.Models.Server.Queries;
 
     /// <summary>
     /// This class implements the paging query request model for browsing audit logs.
     /// </summary>
-    /// <seealso cref="Talegen.Common.Models.Shared.Queries.PaginatedQueryRequestModel" />
+    /// <seealso cref="Talegen.Common.Models.Server.Queries.PaginatedQueryRequestModel" />
     public class AuditLogQueryFilterModel : PaginatedQueryRequestModel
     {
         /// <summary>

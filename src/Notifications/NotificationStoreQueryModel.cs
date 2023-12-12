@@ -17,7 +17,7 @@
 namespace Bastille.Id.Models.Notifications
 {
     using System.Collections.Generic;
-    using Talegen.Common.Models.Shared.Queries;
+    using Talegen.Common.Models.Server.Queries;
 
     /// <summary>
     /// This class represents a notification store query model used in paging interfaces for notification messages.

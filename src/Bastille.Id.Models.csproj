@@ -13,7 +13,7 @@
     <PackageReleaseNotes>Added consent related models to client namespace.</PackageReleaseNotes>
     <NeutralLanguage>en</NeutralLanguage>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.8</Version>
+    <Version>1.0.9</Version>
     <ApplicationIcon>Assets\logo.ico</ApplicationIcon>
     <PackageIcon>logo.png</PackageIcon>
     <EnableNETAnalyzers>true</EnableNETAnalyzers>
@@ -36,7 +36,7 @@
 
   <ItemGroup>
     <PackageReference Include="IdentityServer4.Storage" Version="4.1.2" />
-    <PackageReference Include="Talegen.Common.Models" Version="1.0.5" />
+    <PackageReference Include="Talegen.Common.Models" Version="1.0.9" />
   </ItemGroup>
 
   <ItemGroup>

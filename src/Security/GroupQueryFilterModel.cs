@@ -16,12 +16,12 @@
 
 namespace Bastille.Id.Models.Security
 {
-    using Talegen.Common.Models.Shared.Queries;
+    using Talegen.Common.Models.Server.Queries;
 
     /// <summary>
     /// This class represents a group browsing query filter.
     /// </summary>
-    /// <seealso cref="Talegen.Common.Models.Shared.Queries.PaginatedQueryRequestModel" />
+    /// <seealso cref="Talegen.Common.Models.Server.Queries.PaginatedQueryRequestModel" />
     public class GroupQueryFilterModel : PaginatedQueryRequestModel
     {
         /// <summary>

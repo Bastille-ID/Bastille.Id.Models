@@ -312,30 +312,6 @@ namespace Bastille.Id.Models.Security
         }
 
         /// <summary>
-        /// Gets or sets the web site.
-        /// </summary>
-        [Url]
-        public string Website
-        {
-            get
-            {
-                return this.Claims.ContainsKey(JwtClaimTypes.WebSite) ? this.Claims[JwtClaimTypes.WebSite] : string.Empty;
-            }
-
-            set
-            {
-                if (this.Claims.ContainsKey(JwtClaimTypes.WebSite))
-                {
-                    this.Claims[JwtClaimTypes.WebSite] = value;
-                }
-                else
-                {
-                    this.Claims.Add(JwtClaimTypes.WebSite, value);
-                }
-            }
-        }
-
-        /// <summary>
         /// Gets or sets the URL to the user's profile picture.
         /// </summary>
         public string PictureUrl

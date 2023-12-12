@@ -16,7 +16,7 @@
 
 namespace Bastille.Id.Models.Notifications
 {
-    using Talegen.Common.Models.Shared.Queries;
+    using Talegen.Common.Models.Server.Queries;
 
     /// <summary>
     /// This class represents the results of a notifications store query request.
