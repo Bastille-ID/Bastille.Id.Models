@@ -117,7 +117,7 @@
             <summary>
             This class represents a client claim entry.
             </summary>
-            <seealso cref="T:IdentityServer4.Models.ClientClaim" />
+            <seealso cref="!:Duende.IdentityServer.ClientClaim" />
         </member>
         <member name="P:Bastille.Id.Models.Clients.ClientClaimModel.Id">
             <summary>
@@ -384,7 +384,7 @@
             <summary>
             This class represnts a client secret model associated with a client.
             </summary>
-            <seealso cref="T:IdentityServer4.Models.Secret" />
+            <seealso cref="!:IdentityServer4.Models.Secret" />
         </member>
         <member name="P:Bastille.Id.Models.Clients.ClientSecretModel.Id">
             <summary>

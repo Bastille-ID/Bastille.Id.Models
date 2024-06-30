@@ -16,13 +16,13 @@
 
 namespace Bastille.Id.Models.Clients
 {
-    using IdentityServer4.Models;
+    using Duende.IdentityServer.Models;
     using Newtonsoft.Json;
 
     /// <summary>
     /// This class represents a model related to a client.
     /// </summary>
-    public class ClientModel : IdentityServer4.Models.Client
+    public class ClientModel : Duende.IdentityServer.Models.Client
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="ClientModel" /> class.

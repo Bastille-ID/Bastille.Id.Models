@@ -59,7 +59,7 @@ namespace Bastille.Id.Models.Clients
     /// This class represnts a client secret model associated with a client.
     /// </summary>
     /// <seealso cref="IdentityServer4.Models.Secret" />
-    public class ClientSecretModel : IdentityServer4.Models.Secret
+    public class ClientSecretModel : Duende.IdentityServer.Models.Secret
     {
         /// <summary>
         /// Gets or sets the identifier.

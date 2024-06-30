@@ -19,8 +19,8 @@ namespace Bastille.Id.Models.Clients
     /// <summary>
     /// This class represents a client claim entry.
     /// </summary>
-    /// <seealso cref="IdentityServer4.Models.ClientClaim" />
-    public class ClientClaimModel : IdentityServer4.Models.ClientClaim
+    /// <seealso cref="Duende.IdentityServer.ClientClaim" />
+    public class ClientClaimModel : Duende.IdentityServer.Models.ClientClaim
     {
         /// <summary>
         /// Gets or sets the identifier.
